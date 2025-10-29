@@ -1,0 +1,43 @@
+{
+  "kind": "collectionType",
+  "collectionName": "comments",
+  "info": {
+    "singularName": "comment",
+    "pluralName": "comments",
+    "displayName": "Comment"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "user_id": {
+      "type": "string",
+      "minLength": 5,
+      "maxLength": 36,
+      "required": true
+    },
+    "nickname": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 20
+    },
+    "body": {
+      "type": "text",
+      "minLength": 1,
+      "maxLength": 250,
+      "required": true
+    },
+    "is_approved": {
+      "type": "boolean",
+      "required": true,
+      "default": false
+    },
+    "article": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::article.article",
+      "inversedBy": "comments"
+    }
+  }
+}

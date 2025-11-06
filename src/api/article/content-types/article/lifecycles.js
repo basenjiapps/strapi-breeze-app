@@ -44,14 +44,14 @@ module.exports = {
   async beforeCreate(event) {
     const { data } = event.params;
     if (data && data.content !== undefined) {
-      data.content_preview = makePreviewFromContent(data.content, 30);
+      data.content_preview = makePreviewFromContent(data.content, 50);
     }
   },
 
   async beforeUpdate(event) {
     const { data } = event.params;
     if (data && data.content !== undefined) {
-      data.content_preview = makePreviewFromContent(data.content, 30);
+      data.content_preview = makePreviewFromContent(data.content, 50);
     }
   },
 };

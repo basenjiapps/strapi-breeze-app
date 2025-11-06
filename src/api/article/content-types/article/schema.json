@@ -41,7 +41,7 @@
     },
     "content_preview": {
       "type": "string",
-      "maxLength": 30,
+      "maxLength": 50,
       "required": true
     },
     "content": {

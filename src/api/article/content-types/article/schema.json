@@ -39,6 +39,11 @@
         "audios"
       ]
     },
+    "content_preview": {
+      "type": "string",
+      "maxLength": 30,
+      "required": true
+    },
     "content": {
       "type": "blocks",
       "required": true

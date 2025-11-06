@@ -11,12 +11,10 @@ function blocksToPlainText(blocks) {
       return;
     }
 
-    // Если есть текст — добавляем
     if (typeof node.text === 'string') {
       parts.push(node.text);
     }
 
-    // Обходим вложенные узлы, если они есть
     if (node.children) walk(node.children);
     if (node.body) walk(node.body);
     if (node.content && node.content !== blocks) walk(node.content);
@@ -35,14 +33,16 @@ function makePreviewFromContent(raw, limit = 30) {
     text = blocksToPlainText(raw);
   }
 
-  const compact = text.replace(/[ \n\r]/g, '');
-  return compact.slice(0, limit);
+  // Убираем пробелы и переносы только в начале текста
+  const trimmedStart = text.replace(/^[ \n\r]+/, '');
+
+  // Берём первые `limit` символов без изменения внутренних пробелов
+  return trimmedStart.slice(0, limit);
 }
 
 module.exports = {
   async beforeCreate(event) {
     const { data } = event.params;
-
     if (data && data.content !== undefined) {
       data.content_preview = makePreviewFromContent(data.content, 30);
     }
@@ -50,7 +50,6 @@ module.exports = {
 
   async beforeUpdate(event) {
     const { data } = event.params;
-
     if (data && data.content !== undefined) {
       data.content_preview = makePreviewFromContent(data.content, 30);
     }

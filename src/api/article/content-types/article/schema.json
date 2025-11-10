@@ -58,6 +58,9 @@
       "type": "integer",
       "default": 0,
       "min": 0
+    },
+    "reading_time": {
+      "type": "integer"
     }
   }
 }

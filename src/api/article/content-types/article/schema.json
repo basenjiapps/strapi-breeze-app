@@ -60,7 +60,9 @@
       "min": 0
     },
     "reading_time": {
-      "type": "integer"
+      "type": "integer",
+      "default": 1,
+      "min": 1
     }
   }
 }

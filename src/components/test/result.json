@@ -1,0 +1,54 @@
+{
+  "collectionName": "components_test_results",
+  "info": {
+    "displayName": "result"
+  },
+  "options": {},
+  "attributes": {
+    "result_id": {
+      "type": "string",
+      "required": true
+    },
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "analyticsResultId": {
+      "type": "string",
+      "required": true
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "description": {
+      "type": "blocks"
+    },
+    "sharing_text": {
+      "type": "richtext"
+    },
+    "sharing_type": {
+      "type": "enumeration",
+      "enum": [
+        "type 1",
+        "type 2",
+        "type 2.1",
+        "type 3",
+        "type 4"
+      ]
+    },
+    "sharing_card_metadata": {
+      "type": "blocks"
+    },
+    "bounds": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}

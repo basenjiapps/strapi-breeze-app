@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_test_result_links",
+  "info": {
+    "displayName": "result_link"
+  },
+  "options": {},
+  "attributes": {
+    "result_id": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "config": {}
+}

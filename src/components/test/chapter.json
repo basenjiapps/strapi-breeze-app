@@ -1,0 +1,31 @@
+{
+  "collectionName": "components_test_chapters",
+  "info": {
+    "displayName": "chapter"
+  },
+  "options": {},
+  "attributes": {
+    "chapter_id": {
+      "type": "string",
+      "required": true
+    },
+    "notion_id": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "blocks"
+    },
+    "is_main": {
+      "type": "boolean"
+    },
+    "result_links": {
+      "type": "component",
+      "component": "test.result-link",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

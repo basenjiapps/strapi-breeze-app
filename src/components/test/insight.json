@@ -1,0 +1,40 @@
+{
+  "collectionName": "components_test_insights",
+  "info": {
+    "displayName": "insight"
+  },
+  "options": {},
+  "attributes": {
+    "rec_id": {
+      "type": "string",
+      "required": true
+    },
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "result_id": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "content": {
+      "type": "richtext"
+    },
+    "suggested_tests": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}

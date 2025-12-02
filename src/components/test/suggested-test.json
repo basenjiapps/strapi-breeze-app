@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_test_suggested_tests",
+  "info": {
+    "displayName": "suggested_test"
+  },
+  "options": {},
+  "attributes": {
+    "test_id": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "config": {}
+}

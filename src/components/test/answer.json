@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_test_answers",
+  "info": {
+    "displayName": "answer"
+  },
+  "options": {},
+  "attributes": {
+    "text": {
+      "type": "string"
+    },
+    "score": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}

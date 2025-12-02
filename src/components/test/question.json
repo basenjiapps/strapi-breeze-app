@@ -1,0 +1,30 @@
+{
+  "collectionName": "components_test_questions",
+  "info": {
+    "displayName": "question"
+  },
+  "options": {},
+  "attributes": {
+    "text": {
+      "type": "string"
+    },
+    "answer_type": {
+      "type": "enumeration",
+      "enum": [
+        "yes_no",
+        "likert",
+        "single_choice",
+        "multiple_choice"
+      ]
+    },
+    "answers": {
+      "type": "component",
+      "component": "test.answer",
+      "repeatable": true
+    },
+    "question_type": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}

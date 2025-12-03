@@ -21,7 +21,8 @@
       "required": true
     },
     "analyticsNameId": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "test_category": {
       "type": "relation",
@@ -63,7 +64,7 @@
     },
     "short_description": {
       "type": "string",
-      "maxLength": 50,
+      "maxLength": 150,
       "required": true
     },
     "description": {
@@ -78,6 +79,9 @@
       "type": "string"
     },
     "notification": {
+      "type": "text"
+    },
+    "push": {
       "type": "text"
     },
     "questions": {

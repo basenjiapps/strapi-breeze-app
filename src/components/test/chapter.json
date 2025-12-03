@@ -21,10 +21,9 @@
     "is_main": {
       "type": "boolean"
     },
-    "result_links": {
-      "type": "component",
-      "component": "test.result-link",
-      "repeatable": true
+    "result_id": {
+      "type": "string",
+      "maxLength": 200
     }
   },
   "config": {}

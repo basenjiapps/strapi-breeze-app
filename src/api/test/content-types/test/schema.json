@@ -51,11 +51,6 @@
     },
     "cover": {
       "type": "media",
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      },
       "multiple": false,
       "allowedTypes": [
         "images",
@@ -66,32 +61,17 @@
     },
     "question_count": {
       "type": "integer",
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      },
       "default": 1,
       "min": 1
     },
     "test_time": {
       "type": "integer",
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      },
       "required": false,
       "default": 1,
       "min": 1
     },
     "scoring_type": {
       "type": "enumeration",
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      },
       "enum": [
         "total_sum",
         "group_sum_max",
@@ -121,11 +101,6 @@
     },
     "benefits": {
       "type": "component",
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      },
       "component": "test.what-you-get",
       "repeatable": true
     },
@@ -155,41 +130,21 @@
     },
     "questions": {
       "type": "component",
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      },
       "component": "test.question",
       "repeatable": true
     },
     "results": {
       "type": "component",
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      },
       "component": "test.result",
       "repeatable": true
     },
     "chapters": {
       "type": "component",
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      },
       "component": "test.chapter",
       "repeatable": true
     },
     "insights": {
       "type": "component",
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      },
       "component": "test.insight",
       "repeatable": true
     },
